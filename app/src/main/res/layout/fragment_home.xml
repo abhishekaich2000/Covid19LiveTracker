@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#0D0D0E"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/addView2"
+        ads:adSize = "BANNER"
+        ads:adUnitId = "ca-app-pub-6754604932503864/4893790061"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covid-19 Updates \nGlobal Cases"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:textSize="24dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textTotalCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cases :"
+            android:layout_marginTop="50dp"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/totalCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#F3DA06"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textTotalrecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:text="Total Recovered:"/>
+
+        <TextView
+            android:id="@+id/totalRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#86F10A"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textTotalDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:text="Total Deaths:"/>
+
+        <TextView
+            android:id="@+id/totalDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#F60808"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_Home"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

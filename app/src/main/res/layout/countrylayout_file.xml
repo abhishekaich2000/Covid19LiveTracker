@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:cardBackgroundColor="#0D0D0E"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/photo"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/countryName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="ABC" />
+
+            <TextView
+                android:id="@+id/totalCasesRv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="#F3DA06"
+                android:text="23728"/>
+
+            <TextView
+                android:id="@+id/totalRecoveredRv"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#86F10A"
+                android:text="2378"/>
+
+            <TextView
+                android:id="@+id/totalDeathsRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F60808"
+                android:text="238"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
